@@ -1,0 +1,8 @@
+module: SQLite 
+author: Werner Freytag
+
+clean: true
+skip_undocumented: false
+
+xcodebuild_arguments: [-target, SQLite, LIBRARY_SEARCH_PATHS=.build/debug]
+
