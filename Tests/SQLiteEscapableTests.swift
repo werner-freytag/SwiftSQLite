@@ -1,4 +1,4 @@
-@testable import SQLite
+@testable import SwiftSQLite
 import XCTest
 
 class SQLiteEscapableTests: XCTestCase {
