@@ -1,11 +1,11 @@
-# SQLite
+# SwiftSQLite
 
 A lightweight Swift wrapper for sqlite3
 
 ## Example
 
 ```swift
-import SQLite
+import SwiftSQLite
 
 let sqlite = try! SQLite(path: "test.db")
 
@@ -26,4 +26,4 @@ print(result.fetchAll(column: "value") as [String])
 
 ## Documentation
 
-See unit tests for usage. Find a reference documentation in the docs directory. 
+See unit **tests** for usage. Find a reference documentation in the **docs** directory. 

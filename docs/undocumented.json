@@ -1,75 +1,75 @@
 {
   "warnings": [
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
       "line": 44,
       "symbol": "SQLite.Error.TooBusy",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
       "line": 45,
       "symbol": "SQLite.Error.InvalidType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
       "line": 46,
       "symbol": "SQLite.Error.Failure(code:message:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
       "line": 48,
       "symbol": "SQLite.Error.QueryFailure(error:query:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
       "line": 49,
       "symbol": "SQLite.Error.ArgumentFailure(error:argument:index:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
-      "line": 72,
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
+      "line": 71,
       "symbol": "SQLite.init(path:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
-      "line": 107,
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
+      "line": 106,
       "symbol": "SQLite.prepare(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
-      "line": 149,
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
+      "line": 148,
       "symbol": "SQLite.rollback()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
-      "line": 159,
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
+      "line": 158,
       "symbol": "SQLite.commit()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/werner.freytag/Code/AppcodeProjects/SQLite/Sources/SQLite.swift",
-      "line": 169,
+      "file": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite/Sources/SQLite.swift",
+      "line": 168,
       "symbol": "SQLite.beginTransaction()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/werner.freytag/Code/AppcodeProjects/SQLite"
+  "source_directory": "/Users/werner.freytag/Code/AppcodeProjects/SwiftSQLite"
 }
