@@ -30,7 +30,7 @@ import SQLite3
 
 /// SQLite database handle
 public class SQLite {
-    private(set) var path: String
+    public private(set) var path: String
     private var sqlite3: OpaquePointer!
 
     /// If set to true, all queries are printed
@@ -54,7 +54,7 @@ public class SQLite {
         private var transactionTask: UIBackgroundTaskIdentifier = .invalid
     #endif
 
-    var isInTransaction = false {
+    public var isInTransaction = false {
         willSet {
             #if os(iOS)
                 guard #available(iOS 4.0, *), newValue != isInTransaction, UIDevice.current.isMultitaskingSupported else { return }

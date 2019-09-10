@@ -17,8 +17,12 @@ class SQLiteEscapableTests: XCTestCase {
     }
 
     func testStringSqliteEscaped() {
-        XCTAssertEqual("'Hello'", "Hello".sqliteEscaped)
-        XCTAssertEqual("'Hello'''", "Hello'".sqliteEscaped)
+        XCTAssertEqual("test".sqliteEscaped, "'test'")
+        XCTAssertEqual("\"test".sqliteEscaped, "'\"test'")
+        XCTAssertEqual("'test'".sqliteEscaped, "'''test'''")
+        XCTAssertEqual("'\"test'".sqliteEscaped, "'''\"test'''")
+        XCTAssertEqual("'te\'st'".sqliteEscaped, "'''te''st'''")
+        XCTAssertEqual("te''te".sqliteEscaped, "'te''''te'")
     }
 
     func testBoolSqliteEscaped() {
