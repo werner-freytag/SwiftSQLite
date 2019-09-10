@@ -36,6 +36,7 @@
 		AD376D512326EEC000D43D9D /* SQLiteEscapableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SQLiteEscapableTests.swift; path = Tests/SQLiteEscapableTests.swift; sourceTree = "<group>"; };
 		AD376D532326F0C800D43D9D /* SQLiteResultSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SQLiteResultSetTests.swift; path = Tests/SQLiteResultSetTests.swift; sourceTree = "<group>"; };
 		AD376D5A232702FD00D43D9D /* SQLiteStatementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteStatementTests.swift; path = Tests/SQLiteStatementTests.swift; sourceTree = "<group>"; };
+		AD37D64223271C79006BD6A3 /* SQLite.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SQLite.podspec; sourceTree = "<group>"; };
 		OBJ_10 /* SQLiteResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteResultSet.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SQLiteStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteStatement.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 			children = (
 				AD172559232715620026CF76 /* README.md */,
 				OBJ_6 /* Package.swift */,
+				AD37D64223271C79006BD6A3 /* SQLite.podspec */,
 				OBJ_7 /* Sources */,
 				OBJ_12 /* Tests */,
 				OBJ_13 /* Dependencies */,
