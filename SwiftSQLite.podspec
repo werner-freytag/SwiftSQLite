@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = 'SwiftSQLite'
-    spec.version  = '0.9.1'
+    spec.version  = '0.9.2'
     spec.author = 'Werner Freytag'
     spec.homepage = 'https://github.com/werner-freytag/SwiftSQLite'
     spec.documentation_url = 'https://github.com/werner-freytag/SwiftSQLite'
