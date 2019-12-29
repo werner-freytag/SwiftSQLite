@@ -26,4 +26,4 @@ print(result.fetchAll(column: "value") as [String])
 
 ## Documentation
 
-See unit tests for usage. Find a reference documentation in the **Documents** directory. 
+See unit tests for usage. Find a reference documentation in the **Documentation** directory. 
