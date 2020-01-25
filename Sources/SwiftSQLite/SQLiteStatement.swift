@@ -79,6 +79,8 @@ public class SQLiteStatement {
         }
     }
 
+    public var bindParameterCount: Int { Int(sqlite3_bind_parameter_count(sqlite3_stmt)) }
+
     /// Execute statement and return result set
     @discardableResult
     public func execute() throws -> SQLiteResultSet {

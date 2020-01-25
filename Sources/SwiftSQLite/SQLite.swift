@@ -95,6 +95,8 @@ public class SQLite {
         traceLog("execute query: \(query)")
         let statement = try prepare(query)
 
+        assert(arguments.count == statement.bindParameterCount)
+
         for (index, argument) in arguments.enumerated() {
             traceLog("arg #\(index): \(argument ?? "nil")")
             try statement.bind(argument: argument, toColumn: index)
