@@ -112,6 +112,7 @@ public class SQLiteResultSet {
     }
 
     private func index(of columnName: String) -> Int? {
+        guard !columnNames.isEmpty else { return nil } // no data returned
         guard let index = columnNames.firstIndex(of: columnName)
         else { assertionFailure("Unknown column name \"\(columnName)\""); return nil }
         return index
