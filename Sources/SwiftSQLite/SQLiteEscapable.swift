@@ -73,3 +73,9 @@ extension Double: SQLiteEscapable {
         return result
     }
 }
+
+extension Data: SQLiteEscapable {
+    public var sqliteEscaped: String {
+        String(bytes: self, encoding: .nonLossyASCII)!.sqliteEscaped
+    }
+}

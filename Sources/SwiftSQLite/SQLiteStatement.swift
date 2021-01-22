@@ -41,7 +41,7 @@ public class SQLiteStatement {
     }
 
     /// Bind a value to a column
-    public func bind(argument: Any?, toColumn index: Int) throws {
+    public func bind(argument: SQLiteValue?, toColumn index: Int) throws {
         let index = Int32(index + 1)
 
         do {
@@ -78,6 +78,8 @@ public class SQLiteStatement {
             throw SQLite.Error.ArgumentFailure(error: error, argument: argument, index: index)
         }
     }
+
+    public var bindParameterCount: Int { Int(sqlite3_bind_parameter_count(sqlite3_stmt)) }
 
     /// Execute statement and return result set
     @discardableResult

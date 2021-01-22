@@ -30,15 +30,6 @@ class SQLiteTests: XCTestCase {
         XCTAssertNotNil(result.fetch())
     }
 
-    func testQueryWithInvalidArgument() {
-        var result: SQLiteResultSet!
-        do {
-            result = try sqlite.query("SELECT ?", arguments: [CGPoint(x: 0, y: 0)])
-        } catch {}
-
-        XCTAssertNil(result)
-    }
-
     func testQueryWithNilArgument() {
         let result = try! sqlite.query("SELECT ?", arguments: [nil])
 
@@ -99,7 +90,6 @@ class SQLiteTests: XCTestCase {
     static var allTests = [
         ("testQuery", testQuery),
         ("testQueryWithArguments", testQueryWithArguments),
-        ("testQueryWithInvalidArgument", testQueryWithInvalidArgument),
         ("testQueryWithNilArgument", testQueryWithNilArgument),
         ("testPrepareAndExecute", testPrepareAndExecute),
         ("testLastInsertRowId", testLastInsertRowId),
