@@ -28,7 +28,7 @@ class SQLiteResultSetTests: XCTestCase {
     func testFetch() {
         let result = try! sqlite.query("SELECT * FROM test")
 
-        var row: [String: Any?]
+        var row: [String: SQLiteValue?]
 
         row = result.fetch()!
         XCTAssertEqual(1, row["id"] as? Int)

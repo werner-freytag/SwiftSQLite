@@ -46,7 +46,7 @@ public class SQLite {
         case Failure(code: Int32, message: String)
 
         case QueryFailure(error: Swift.Error, query: String)
-        case ArgumentFailure(error: Swift.Error, argument: Any?, index: Int32)
+        case ArgumentFailure(error: Swift.Error, argument: SQLiteValue?, index: Int32)
     }
 
     #if os(iOS)
@@ -91,7 +91,7 @@ public class SQLite {
 
     /// Prepares a query, binds arguments to it and execute it
     @discardableResult
-    public func query(_ query: String, arguments: [Any?] = []) throws -> SQLiteResultSet {
+    public func query(_ query: String, arguments: [SQLiteValue?] = []) throws -> SQLiteResultSet {
         traceLog("execute query: \(query)")
         let statement = try prepare(query)
 

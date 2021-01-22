@@ -47,7 +47,7 @@ public class SQLiteResultSet {
     // MARK: fetch
 
     /// Fetch next row as dictionary
-    public func fetch() -> [String: Any?]? {
+    public func fetch() -> [String: SQLiteValue?]? {
         guard let row = fetch(prepare: { columnNames.enumerated().map { ($1, value(at: $0)) } }) else { return nil }
         return Dictionary(uniqueKeysWithValues: row)
     }
@@ -66,7 +66,7 @@ public class SQLiteResultSet {
     // MARK: fetchAll
 
     /// Fetch all rows as array of dictionaries
-    public func fetchAll() -> [[String: Any?]] {
+    public func fetchAll() -> [[String: SQLiteValue?]] {
         return Array(iterate())
     }
 
@@ -83,7 +83,7 @@ public class SQLiteResultSet {
     // MARK: iterate
 
     /// Returns sequence to iterate over all rows
-    public func iterate() -> AnySequence<[String: Any?]> {
+    public func iterate() -> AnySequence<[String: SQLiteValue?]> {
         return AnySequence {
             AnyIterator {
                 self.fetch()
@@ -129,7 +129,7 @@ public class SQLiteResultSet {
     // MARK: internal
 
     /// Returns a column of the current row
-    private func value(at index: Int) -> Any? {
+    private func value(at index: Int) -> SQLiteValue? {
         guard (0 ..< columnNames.count).contains(index)
         else { assertionFailure("Out of range (\(index))"); return nil }
 

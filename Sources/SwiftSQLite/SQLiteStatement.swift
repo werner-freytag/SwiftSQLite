@@ -41,7 +41,7 @@ public class SQLiteStatement {
     }
 
     /// Bind a value to a column
-    public func bind(argument: Any?, toColumn index: Int) throws {
+    public func bind(argument: SQLiteValue?, toColumn index: Int) throws {
         let index = Int32(index + 1)
 
         do {
