@@ -58,30 +58,37 @@
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 106,
+      "line": 108,
       "symbol": "SQLite.prepare(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 148,
+      "line": 150,
       "symbol": "SQLite.rollback()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 158,
+      "line": 160,
       "symbol": "SQLite.commit()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 168,
+      "line": 170,
       "symbol": "SQLite.beginTransaction()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLiteStatement.swift",
+      "line": 82,
+      "symbol": "SQLiteStatement.bindParameterCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
