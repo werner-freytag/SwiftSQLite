@@ -10,35 +10,35 @@
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
       "line": 44,
-      "symbol": "SQLite.Error.TooBusy",
+      "symbol": "SQLite.Error.tooBusy",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
       "line": 45,
-      "symbol": "SQLite.Error.InvalidType",
+      "symbol": "SQLite.Error.invalidType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
       "line": 46,
-      "symbol": "SQLite.Error.Failure(code:message:)",
+      "symbol": "SQLite.Error.failure(code:message:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
       "line": 48,
-      "symbol": "SQLite.Error.QueryFailure(error:query:)",
+      "symbol": "SQLite.Error.queryFailure(error:query:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
       "line": 49,
-      "symbol": "SQLite.Error.ArgumentFailure(error:argument:index:)",
+      "symbol": "SQLite.Error.argumentFailure(error:argument:index:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -58,30 +58,37 @@
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 106,
+      "line": 108,
       "symbol": "SQLite.prepare(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 148,
+      "line": 150,
       "symbol": "SQLite.rollback()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 158,
+      "line": 160,
       "symbol": "SQLite.commit()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLite.swift",
-      "line": 168,
+      "line": 170,
       "symbol": "SQLite.beginTransaction()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/werner/Code/SwiftSQLite/Sources/SwiftSQLite/SQLiteStatement.swift",
+      "line": 82,
+      "symbol": "SQLiteStatement.bindParameterCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],

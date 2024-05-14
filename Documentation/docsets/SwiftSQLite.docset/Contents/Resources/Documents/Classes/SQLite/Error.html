@@ -8,19 +8,31 @@
     <script src="../../js/jquery.min.js" defer></script>
     <script src="../../js/jazzy.js" defer></script>
     
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
     <a title="Error Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html">SwiftSQLite Docs</a> (73% documented)</p>
+        <p><a href="../../index.html">SwiftSQLite 0.9.3 Docs</a> (75% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../../index.html">SwiftSQLite Reference</a>
-        <img id="carat" src="../../img/carat.png" />
+        <a href="../../index.html">SwiftSQLite</a>
+        <img id="carat" src="../../img/carat.png" alt=""/>
+        <a href="../../Classes.html">Classes</a>
+        <img id="carat" src="../../img/carat.png" alt=""/>
+        <a href="../../Classes/SQLite.html">SQLite</a>
+        <img id="carat" src="../../img/carat.png" alt=""/>
         Error Enumeration Reference
       </p>
     </div>
@@ -51,7 +63,13 @@
                 <a href="../../Extensions/Bool.html">Bool</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/s:Sf">Float</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Extensions/Int.html">Int</a>
@@ -67,6 +85,9 @@
               <li class="nav-group-task">
                 <a href="../../Protocols/SQLiteEscapable.html">SQLiteEscapable</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols.html#/s:11SwiftSQLite0B5ValueP">SQLiteValue</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -77,6 +98,7 @@
             <h1>Error</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
 
                 </div>
@@ -90,9 +112,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SwiftSQLite0B0C5ErrorO7TooBusyyA2EmF"></a>
-                    <a name="//apple_ref/swift/Element/TooBusy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO7TooBusyyA2EmF">TooBusy</a>
+                    <a name="/s:11SwiftSQLite0B0C5ErrorO7tooBusyyA2EmF"></a>
+                    <a name="//apple_ref/swift/Element/tooBusy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO7tooBusyyA2EmF">tooBusy</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -107,7 +129,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">TooBusy</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tooBusy</span></code></pre>
 
                         </div>
                       </div>
@@ -117,9 +139,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SwiftSQLite0B0C5ErrorO11InvalidTypeyA2EmF"></a>
-                    <a name="//apple_ref/swift/Element/InvalidType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO11InvalidTypeyA2EmF">InvalidType</a>
+                    <a name="/s:11SwiftSQLite0B0C5ErrorO11invalidTypeyA2EmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO11invalidTypeyA2EmF">invalidType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -134,7 +156,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">InvalidType</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidType</span></code></pre>
 
                         </div>
                       </div>
@@ -144,9 +166,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SwiftSQLite0B0C5ErrorO7FailureyAEs5Int32V_SStcAEmF"></a>
-                    <a name="//apple_ref/swift/Element/Failure(code:message:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO7FailureyAEs5Int32V_SStcAEmF">Failure(code:message:)</a>
+                    <a name="/s:11SwiftSQLite0B0C5ErrorO7failureyAEs5Int32V_SStcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/failure(code:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO7failureyAEs5Int32V_SStcAEmF">failure(code:<wbr>message:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -161,7 +183,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">Failure</span><span class="p">(</span><span class="nv">code</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">failure</span><span class="p">(</span><span class="nv">code</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -171,9 +193,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SwiftSQLite0B0C5ErrorO12QueryFailureyAEsAD_p_SStcAEmF"></a>
-                    <a name="//apple_ref/swift/Element/QueryFailure(error:query:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO12QueryFailureyAEsAD_p_SStcAEmF">QueryFailure(error:query:)</a>
+                    <a name="/s:11SwiftSQLite0B0C5ErrorO12queryFailureyAEsAD_p_SStcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/queryFailure(error:query:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO12queryFailureyAEsAD_p_SStcAEmF">queryFailure(error:<wbr>query:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -188,7 +210,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">QueryFailure</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">queryFailure</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="p">,</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -198,9 +220,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SwiftSQLite0B0C5ErrorO15ArgumentFailureyAEsAD_p_ypSgs5Int32VtcAEmF"></a>
-                    <a name="//apple_ref/swift/Element/ArgumentFailure(error:argument:index:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO15ArgumentFailureyAEsAD_p_ypSgs5Int32VtcAEmF">ArgumentFailure(error:argument:index:)</a>
+                    <a name="/s:11SwiftSQLite0B0C5ErrorO15argumentFailureyAEsAD_p_AA0B5Value_pSgs5Int32VtcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/argumentFailure(error:argument:index:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SwiftSQLite0B0C5ErrorO15argumentFailureyAEsAD_p_AA0B5Value_pSgs5Int32VtcAEmF">argumentFailure(error:<wbr>argument:<wbr>index:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -215,7 +237,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">ArgumentFailure</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="p">,</span> <span class="nv">argument</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">argumentFailure</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="p">,</span> <span class="nv">argument</span><span class="p">:</span> <span class="kt"><a href="../../Protocols.html#/s:11SwiftSQLite0B5ValueP">SQLiteValue</a></span><span class="p">?,</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -227,11 +249,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://github.com/werner-freytag/SwiftSQLite" target="_blank" rel="external">Werner Freytag</a>. All rights reserved. (Last updated: 2019-12-25)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2024 <a class="link" href="https://github.com/werner-freytag/SwiftSQLite" target="_blank" rel="external noopener">Werner Freytag</a>. All rights reserved. (Last updated: 2024-05-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

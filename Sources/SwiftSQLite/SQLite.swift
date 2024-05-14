@@ -41,12 +41,12 @@ public class SQLite {
 
     /// Errors that can occur
     public enum Error: Swift.Error {
-        case TooBusy
-        case InvalidType
-        case Failure(code: Int32, message: String)
+        case tooBusy
+        case invalidType
+        case failure(code: Int32, message: String)
 
-        case QueryFailure(error: Swift.Error, query: String)
-        case ArgumentFailure(error: Swift.Error, argument: SQLiteValue?, index: Int32)
+        case queryFailure(error: Swift.Error, query: String)
+        case argumentFailure(error: Swift.Error, argument: SQLiteValue?, index: Int32)
     }
 
     #if os(iOS)
@@ -112,7 +112,7 @@ public class SQLite {
             try executeSqlite3 { sqlite3_prepare_v2(sqlite3, query, -1, &sqlite3_stmt, nil) }
         } catch {
             sqlite3_finalize(sqlite3_stmt)
-            throw Error.QueryFailure(error: error, query: query)
+            throw Error.queryFailure(error: error, query: query)
         }
 
         return SQLiteStatement(pStmt: sqlite3_stmt, executeSqlite3: executeSqlite3(_:))
@@ -130,11 +130,11 @@ public class SQLite {
                 Thread.sleep(forTimeInterval: 0.02)
 
             default:
-                throw SQLite.Error.Failure(code: rc, message: String(cString: sqlite3_errmsg(sqlite3)))
+                throw SQLite.Error.failure(code: rc, message: String(cString: sqlite3_errmsg(sqlite3)))
             }
         }
 
-        throw SQLite.Error.TooBusy
+        throw SQLite.Error.tooBusy
     }
 
     // MARK: Logging

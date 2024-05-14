@@ -75,7 +75,7 @@ class SQLiteTests: XCTestCase {
         var result: SQLiteResultSet!
         try? sqlite.performTransaction {
             result = try! sqlite.query("INSERT INTO test(id) VALUES(1)")
-            throw SQLite.Error.InvalidType
+            throw SQLite.Error.invalidType
         }
         result = try! sqlite.query("SELECT * FROM test")
         XCTAssertNil(result.fetch())

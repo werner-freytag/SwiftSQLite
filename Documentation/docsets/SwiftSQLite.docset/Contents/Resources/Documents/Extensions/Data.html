@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SQLiteEscapable Protocol Reference</title>
+    <title>Data Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/SQLiteEscapable" class="dashAnchor"></a>
-    <a title="SQLiteEscapable Protocol Reference"></a>
+    <a name="//apple_ref/swift/Extension/Data" class="dashAnchor"></a>
+    <a title="Data Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SwiftSQLite 0.9.3 Docs</a> (75% documented)</p>
@@ -29,9 +29,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">SwiftSQLite</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../Protocols.html">Protocols</a>
+        <a href="../Extensions.html">Extensions</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SQLiteEscapable Protocol Reference
+        Foundation.Data Extension Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -93,16 +93,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SQLiteEscapable</h1>
+            <h1>Data</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SQLiteEscapable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Data</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SQLiteEscapable.html">SQLiteEscapable</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Data</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11SwiftSQLite0B5ValueP">SQLiteValue</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Protocol for escaping values for usage in queries</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -120,14 +120,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Escape values for usage in queries</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sqliteEscaped</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sqliteEscaped</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

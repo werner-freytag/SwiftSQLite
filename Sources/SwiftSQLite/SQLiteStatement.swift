@@ -71,11 +71,11 @@ public class SQLiteStatement {
                     return sqlite3_bind_null(sqlite3_stmt, index)
 
                 default:
-                    throw SQLite.Error.InvalidType
+                    throw SQLite.Error.invalidType
                 }
             }
         } catch {
-            throw SQLite.Error.ArgumentFailure(error: error, argument: argument, index: index)
+            throw SQLite.Error.argumentFailure(error: error, argument: argument, index: index)
         }
     }
 
